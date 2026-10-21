@@ -1,0 +1,112 @@
+// 변수 'name'에 자신의 이름을 문자열로 저장
+// const name2 = '김희수'
+// 상수 birthYear에 태어난 연도를 숫자로 저장
+// let birthYear = 2004 // 출생연도는 변하지 않는 값으로, 상수로 선언하라 했으니 const가 적합함
+// 변수 'age'에 현재 나이를 숫자로 저장
+// const age = 23 // 나인ㄴ 시간이 지나면 바뀌는 값으로, 나중에 값을 변경할 수 있게 let을 사용하는 걸 권장
+// 'console.log()'를 사용해 세 값을 각각 출력하기
+// console.log(name2, birthYear, age)
+
+// 학생의 기본 정보를 상수에 저장하고, 자료형을 확인하세요.
+// 'studentName'에 자신의 이름을 문자열로 저장하세요.
+// 'birthYear'에 출생 연도를 상수로 저장하세요.
+// 'isStudent'에 'true'를 저장하세요.
+// 세 변수의 값과 각각의 자료형을 출력하세요.
+// const studentName = "김희수"
+// const birthYear = 2004
+// const isStudent = true
+// 
+// console.log(studentName, birthYear, isStudent)
+// console.log(typeof(studentName))
+// console.log(typeof(birthYear))
+// console.log(typeof(isStudent))
+
+// num1과 num2에 각각 숫자 25와 7을 저장하고 다음 결과를 출력하세요.
+// 1. 두 수의 합
+// 2. 두 수의 차
+// 3. 두 수의 곱
+// 4. 두 수를 나눈 결과
+// 5. 두 수를 나눈 나머지
+
+// const num1 = 25
+// const num2 = 7
+// 
+// console.log(num1 + num2)
+// console.log(num1 - num2)
+// console.log(num1 * num2)
+// console.log(num1 / num2)
+// console.log(num1 % num2)
+
+// 용돈 계산하기 문제
+// 처음 가진 용돈은 50,000원이다. 다음 상황을 자바스크립트로 구현할 것!
+// - 처음 용돈 : 50,000원
+// - 점심값 지출 : 8,500원
+// - 커피값 지출 : 4,500원
+// - 아르바이트비 입급 : 30,000원
+// 
+// 작성 조건
+// - money라는 변수를 선언할 것
+// - -=와 += 복합 대입 연산자 반드시 사용할 것
+// - 최종 잔액을 console로 출력할 것
+
+// let money = 50000
+// money -= 8500
+// money -= 4500
+// money += 30000
+// 
+// console.log(money)
+
+// a와 b가 ==로 같은지 확인
+// a와 b가 ===로 같은지 확인
+// a와 b가 !==로 다른지 확인
+// a가 5 이상인지 확인
+
+// const a = 10;
+// const b = "10"
+// 
+// console.log(a == b)
+// console.log(a === b)
+// console.log(a !== b)
+// console.log(a >= 5)
+
+// 영화관 입장 조건 만들기
+// 영화관에서는 다음 두 가지 조건을 모두 충족해야 입장할 수 있습니다.
+// - 나이가 19세 이상일 것
+// - 영화 티켓을 가지고 있을 것
+// 작성 조건
+// 1. age에 숫자 22를 저장하세요.
+// 2. hasTicket에 true를 저장하세요.
+// 3. && 연산자로 두 조건을 모두 확인하세요.
+// 4. 삼항 연산자(? :)를 사용해 입장 가능 여부를 출력하세요.
+// 5. if문은 사용하지 마세요.
+
+// let age = 22
+// const hasTicket = true
+// 
+// console.log(age >= 19 && hasTicket)
+// 
+// age >= 19 && hasTicket == true ? (
+//     console.log("입장 가능") 
+//  ) : (
+//     console.log("입장 불가능")
+//  )
+
+// 온라인 쇼핑몰 할인 계산기
+// 
+// 다음 조건에 맞는 JavaScript 코드를 직접 작성하세요.
+// - 상품 가격 price = 45000
+// - 회원 여부 isMember = true
+// - 회원이면 10% 할인, 비회원이면 할인 없음
+// - 삼항 연산자를 반드시 사용
+// - 할인된 최종 가격을 console.log()로 출력
+
+let price = 45000
+const isMember = true
+
+console.log(isMember == true)
+
+isMember == true ? (
+    console.log(price * 0.9)
+) : (
+    console.log(price)
+)
