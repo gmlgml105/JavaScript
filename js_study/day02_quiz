@@ -73,14 +73,14 @@
 // 3. 짝수들의 합계를 sum 변수에 누적합니다.
 // 4. 마지막에 console.log(sum)으로 결과를 출력합니다.
 
-const numbers = [3, 8, 12, 5, 7, 10, 4]
-
-let sum = 0;
-
-for (let i = 0; i < numbers.length; i++) {
-    if (i % 2 == 0) {
-        const sum =+ i
-    }
-}
-
-console.log(sum)
+// const numbers = [3, 8, 12, 5, 7, 10, 4]
+// 
+// let sum = 0;
+// 
+// for (let i = 0; i < numbers.length; i++) {
+//     if (i % 2 == 0) {
+//         const sum =+ i 
+//     }
+// }
+// 
+// console.log(sum)

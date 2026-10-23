@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키보드 이벤트</title>
+</head>
+<body>
+    <div>
+        <input class="text-input" text="text" />
+        <p class="name"></p>
+    </div>
+</body>
+<script>
+    // 사용자가 입력한 것들을 기반으로 화면에 보여주기
+    const input = document.querySelector(".text-input")
+    const p = document.querySelector(".name")
+
+    // input.addEventListener("keydown", (e) => {
+    //     if(e.key === "Enter"){
+    //         p.innerText = e.target.value
+    //     }
+    // })
+        input.addEventListener("keydown", (e) => {
+            p.innerText = e.target.value
+        })
+</script>
+</html>

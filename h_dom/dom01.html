@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p>"Hello, World!"</p>
+    <strong class = "test" color = "red">글자를 파란색으로!</strong>
+</body>
+<script>
+    const p = document.getElementsByTagName("p")
+    // console.log(p[0].innerText)
+    // p[0].innerText = "수정!"
+    const strongs = document.getElementsByClassName("test")[0]
+    console.log(strongs)
+    strongs.style.color = "blue"
+    // 순서가 아래 script - 그 다음 태그가 읽히기에, 위 태그 안에 스타일을 설정해도 읽히지 않음
+</script>
+</html>

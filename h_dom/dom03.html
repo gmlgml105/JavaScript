@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>name 속성을 이용한 선택</title>
+  </head>
+  <body>
+    <div>
+        <h1>name 속성을 이용한 선택</h1>
+    <div>
+    </div>
+    <div>
+        <input value = "test123@gmail.com" name = "name" placeholder="이름을 입력하세요." />
+        <input value = "test123!!" name = "passward" placeholder="비밀번호를 입력하세요." />
+    </div>    
+            <label>
+                <span>C</span>
+                <input type="checkbox" name="language" value="C" />
+            </label>
+            <label>
+                <span>JS</span>
+                <input type="checkbox" name="language" value="JS" />
+            </label>
+            <label>
+                <span>Python</span>
+                <input type="checkbox" name="language" value="Python" />
+            </label>
+        </div>
+    </div>
+  </body>
+  <script>
+    const checkboxes = document.getElementsByName("language")
+    console.log(checkboxes)
+
+    // 반복문을 돌려서 전체를 모두 체크상태로 변경
+    checkboxes.forEach((checkbox) => checkbox.checked = true)
+
+    // 체크 박스지에 체크가 안되어 있는 태그만 가져오기
+    NodeList.prototype.filter = Array.prototype.fiter
+    console.log(checkboxes.filter((checkbox) => !checkbox.checked))
+  </script>
+</html>
